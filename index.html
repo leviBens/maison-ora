@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maison Ora · Traiteur casher à Paris</title>
+  <meta name="description" content="Maison Ora, traiteur casher à Paris : mariages, Bar et Bat Mitsva, Brit Mila, Chabbat et événements d'entreprise. Devis sous 24 h.">
+
+  <!-- Polices Google : Cormorant Garamond (titres), Figtree (texte), Material Symbols (icônes) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ BANDEAU DÉMO ============ -->
+<div class="demo-banner" role="note">
+  <span class="material-symbols-outlined">info</span>
+  <span><strong>Site de démonstration.</strong> Maison Ora est un traiteur fictif : adresse, numéros, avis et cacherout ne sont pas réels.</span>
+</div>
+
+<!-- ============ EN-TÊTE ============ -->
+<header class="header">
+  <div class="header__inner">
+    <a href="#accueil" class="logo">
+      <span class="logo__name">Maison Ora</span>
+      <span class="logo__tagline">Traiteur casher · Paris</span>
+    </a>
+
+    <nav class="nav">
+      <a href="#prestations">Prestations</a>
+      <a href="#menus">Menus</a>
+      <a href="#apropos">À propos</a>
+      <a href="#avis">Avis</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--primary btn--small">Demander un devis</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Menu mobile, caché par défaut, ouvert par script.js -->
+  <nav class="mobile-nav" id="mobile-nav" hidden>
+    <a href="#prestations">Prestations</a>
+    <a href="#menus">Menus</a>
+    <a href="#apropos">À propos</a>
+    <a href="#avis">Avis</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section id="accueil" class="hero-wrap">
+  <div class="hero">
+    <div class="photo hero__photo" data-label="Photo : buffet élégant dressé (format paysage, 2400 px)"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <span class="badge">Casher sous surveillance du Beth Din 000</span>
+      <h1>Des saveurs de tradition, <em>une présentation d'exception.</em></h1>
+      <p class="hero__lead">Cuisine méditerranéenne et juive traditionnelle, préparée chaque jour dans notre cuisine parisienne pour vos mariages, Bar Mitsva, Brit Mila, Chabbat et réceptions d'entreprise.</p>
+      <div class="hero__buttons">
+        <a href="#contact" class="btn btn--gold">Demander un devis <span class="material-symbols-outlined">arrow_forward</span></a>
+        <a href="#menus" class="btn btn--ghost">Voir nos menus</a>
+      </div>
+      <ul class="hero__assurances">
+        <li><span class="material-symbols-outlined">verified</span>Cacherout Beth Din 000</li>
+        <li><span class="material-symbols-outlined">soup_kitchen</span>100 % fait maison</li>
+        <li><span class="material-symbols-outlined">schedule</span>Devis sous 24 h</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRESTATIONS ============ -->
+<section id="prestations" class="section">
+  <div class="container">
+    <div class="section__head">
+      <span class="kicker">Nos prestations</span>
+      <h2>Chaque moment de vie mérite sa table</h2>
+      <p>De l'intimité d'un dîner de Chabbat aux grandes réceptions, nous adaptons la carte, le service et la mise en scène à votre événement.</p>
+    </div>
+
+    <div class="grid grid--services">
+      <article class="card service">
+        <span class="service__icon"><span class="material-symbols-outlined">favorite</span></span>
+        <h3>Mariages</h3>
+        <p>Du houppa au dernier verre, un menu sur mesure et un service en salle orchestré dans les moindres détails.</p>
+      </article>
+      <article class="card service">
+        <span class="service__icon"><span class="material-symbols-outlined">menu_book</span></span>
+        <h3>Bar et Bat Mitsva</h3>
+        <p>Une fête à l'image de votre enfant, avec un buffet pour les jeunes et une table raffinée pour les adultes.</p>
+      </article>
+      <article class="card service">
+        <span class="service__icon"><span class="material-symbols-outlined">child_care</span></span>
+        <h3>Brit Mila</h3>
+        <p>Un buffet chaleureux prêt en quelques jours, livré à la synagogue ou chez vous dès le matin.</p>
+      </article>
+      <article class="card service">
+        <span class="service__icon"><span class="material-symbols-outlined">wine_bar</span></span>
+        <h3>Chabbat et fêtes</h3>
+        <p>Repas de Chabbat, Roch Hachana, Pessah : des plats traditionnels livrés prêts à servir avant l'heure.</p>
+      </article>
+      <article class="card service">
+        <span class="service__icon"><span class="material-symbols-outlined">business_center</span></span>
+        <h3>Entreprises</h3>
+        <p>Petits-déjeuners, cocktails et séminaires casher, avec facturation et logistique simplifiées.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MENUS ============ -->
+<section id="menus" class="section">
+  <div class="container">
+    <div class="section__head">
+      <span class="kicker">Nos menus</span>
+      <h2>Trois formules, une même exigence</h2>
+      <p>Des bases éprouvées que nous ajustons ensemble : nombre de pièces, plats signatures, options végétariennes, menus enfants.</p>
+    </div>
+
+    <div class="grid grid--menus">
+      <article class="menu-card">
+        <div class="menu-card__head">
+          <span class="menu-card__kicker">Debout</span>
+          <h3>Cocktail</h3>
+          <p>Pièces salées et sucrées servies au plateau, idéal pour un vin d'honneur ou une réception d'entreprise.</p>
+        </div>
+        <ul class="menu-card__dishes">
+          <li>Mini-bricks au thon et citron confit</li>
+          <li>Cigares au bœuf et cannelle</li>
+          <li>Tartare de saumon, crème d'avocat au citron vert</li>
+          <li>Mignardises : makrouts, cornes de gazelle, choux pistache</li>
+        </ul>
+        <div class="menu-card__foot">
+          <div class="price"><span>à partir de</span><strong>38 €</strong><span>par personne</span></div>
+          <a href="#contact" class="btn btn--soft btn--block">Demander un devis</a>
+        </div>
+      </article>
+
+      <!-- La formule mise en avant utilise la variante sombre -->
+      <article class="menu-card menu-card--featured">
+        <span class="menu-card__badge">Le plus demandé</span>
+        <div class="menu-card__head">
+          <span class="menu-card__kicker">Généreux</span>
+          <h3>Buffet</h3>
+          <p>Une grande table dressée, chaude et froide, où chacun se sert à sa faim. Parfait pour les Brit Mila et les fêtes.</p>
+        </div>
+        <ul class="menu-card__dishes">
+          <li>Salades méditerranéennes : houmous, caviar d'aubergine, tabboulé aux herbes</li>
+          <li>Poulet aux olives et citron confit</li>
+          <li>Couscous aux sept légumes, boulettes à la coriandre</li>
+          <li>Buffet de desserts et fruits de saison</li>
+        </ul>
+        <div class="menu-card__foot">
+          <div class="price"><span>à partir de</span><strong>55 €</strong><span>par personne</span></div>
+          <a href="#contact" class="btn btn--gold btn--block">Demander un devis</a>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-card__head">
+          <span class="menu-card__kicker">Assis</span>
+          <h3>Repas servi à table</h3>
+          <p>Un dîner à l'assiette, servi par nos maîtres d'hôtel, pour les mariages et les grandes célébrations.</p>
+        </div>
+        <ul class="menu-card__dishes">
+          <li>Entrée : carpaccio de daurade aux agrumes</li>
+          <li>Plat : souris d'agneau confite, semoule fine aux amandes</li>
+          <li>Trou normand : sorbet citron-menthe</li>
+          <li>Dessert : entremets chocolat-noisette et pièce montée</li>
+        </ul>
+        <div class="menu-card__foot">
+          <div class="price"><span>à partir de</span><strong>89 €</strong><span>par personne</span></div>
+          <a href="#contact" class="btn btn--soft btn--block">Demander un devis</a>
+        </div>
+      </article>
+    </div>
+
+    <p class="note">Prix indicatifs hors service et location de matériel, à partir de 30 convives. Vaisselle, maîtres d'hôtel et décoration florale sur demande.</p>
+  </div>
+</section>
+
+<!-- ============ À PROPOS ============ -->
+<section id="apropos" class="section">
+  <div class="container about">
+    <div class="photo about__photo" data-label="Photo : la cheffe et l'équipe en cuisine"></div>
+
+    <div class="about__text">
+      <span class="kicker">À propos</span>
+      <h2>Une histoire de famille, servie à votre table</h2>
+      <p>Maison Ora est née en 2011 dans le 00<sup>e</sup> arrondissement, autour des recettes d'Ora, notre grand-mère : ses boulettes à la coriandre, sa pkaïla des grandes fêtes, ses gâteaux au miel de Roch Hachana. Quinze ans plus tard, nous cuisinons toujours avec la même générosité, en y ajoutant la précision et l'élégance que mérite chaque réception.</p>
+      <p>Tout est préparé dans notre cuisine, à partir de produits frais choisis chaque matin : rien n'est surgelé, rien n'est acheté tout fait.</p>
+
+      <div class="grid grid--pillars">
+        <div class="pillar">
+          <span class="material-symbols-outlined">verified</span>
+          <div><strong>Cacherout Beth Din 000</strong><span>Surveillant présent en permanence, viande Glatt, certificat remis sur demande.</span></div>
+        </div>
+        <div class="pillar">
+          <span class="material-symbols-outlined">soup_kitchen</span>
+          <div><strong>Fait maison, chaque jour</strong><span>Pâtisseries, pains et sauces réalisés sur place par notre brigade.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERIE ============ -->
+<section id="galerie" class="section">
+  <div class="container">
+    <div class="gallery__head">
+      <div class="section__head section__head--tight">
+        <span class="kicker">Galerie</span>
+        <h2>Nos tables, nos assiettes</h2>
+      </div>
+      <a href="https://instagram.com" class="link-arrow">Plus de photos sur Instagram <span class="material-symbols-outlined">arrow_outward</span></a>
+    </div>
+
+    <div class="grid grid--gallery">
+      <div class="photo gallery__item" data-label="Photo : table de mariage dressée"></div>
+      <div class="photo gallery__item" data-label="Photo : plateau de mezzés"></div>
+      <div class="photo gallery__item" data-label="Photo : pièces cocktail en gros plan"></div>
+      <div class="photo gallery__item" data-label="Photo : table de Chabbat, hallot et bougies"></div>
+      <div class="photo gallery__item" data-label="Photo : buffet de desserts"></div>
+      <div class="photo gallery__item" data-label="Photo : plat servi à l'assiette"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AVIS ============ -->
+<section id="avis" class="section">
+  <div class="container reviews">
+    <div class="section__head">
+      <span class="kicker kicker--light">Avis clients</span>
+      <h2>Ils nous ont confié leur plus beau jour</h2>
+    </div>
+
+    <div class="grid grid--reviews">
+      <figure class="review">
+        <span class="review__stars" aria-label="5 étoiles sur 5">★★★★★</span>
+        <blockquote>« Nos invités en parlent encore. Le service était impeccable, et la pastilla de la mariée, un vrai moment d'émotion. »</blockquote>
+        <figcaption><strong>Déborah et Jonathan</strong><span>Mariage, 220 invités</span></figcaption>
+      </figure>
+      <figure class="review">
+        <span class="review__stars" aria-label="5 étoiles sur 5">★★★★★</span>
+        <blockquote>« Organiser une Brit Mila en quatre jours, c'est stressant. Maison Ora a tout pris en main, avec le sourire et une cacherout irréprochable. »</blockquote>
+        <figcaption><strong>Raphaël</strong><span>Brit Mila, 80 invités</span></figcaption>
+      </figure>
+      <figure class="review">
+        <span class="review__stars" aria-label="5 étoiles sur 5">★★★★★</span>
+        <blockquote>« Enfin un traiteur casher qui convient à toute l'équipe, pratiquants ou non. Livraison ponctuelle, présentation superbe. »</blockquote>
+        <figcaption><strong>Sarah</strong><span>Séminaire d'entreprise, 60 personnes</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section section--last">
+  <div class="container contact">
+    <div class="contact__info">
+      <div class="section__head section__head--tight">
+        <span class="kicker">Contact</span>
+        <h2>Parlons de votre événement</h2>
+        <p>Décrivez-nous votre projet : nous revenons vers vous sous 24 h avec une proposition détaillée. La dégustation est offerte pour les mariages et les Bar et Bat Mitsva.</p>
+      </div>
+
+      <ul class="contact__details">
+        <li><span class="material-symbols-outlined">location_on</span><span>00 rue 000<br>00000 Paris</span></li>
+        <li><span class="material-symbols-outlined">call</span><a href="tel:+33000000000">00 00 00 00 00</a></li>
+        <li><span class="material-symbols-outlined">schedule</span><span>Du dimanche au jeudi : 9 h à 19 h<br>Vendredi : 9 h à 14 h · Fermé le Chabbat</span></li>
+      </ul>
+
+      <a href="https://wa.me/33000000000" class="btn btn--whatsapp"><span class="material-symbols-outlined">chat</span>Écrire sur WhatsApp</a>
+    </div>
+
+    <div class="card contact__box">
+      <!-- Formulaire. Pour l'instant il n'envoie rien : script.js affiche juste le message de remerciement -->
+      <form id="devis-form" class="form">
+        <label>Nom et prénom<input name="nom" required autocomplete="name"></label>
+        <label>Téléphone<input name="tel" type="tel" required autocomplete="tel"></label>
+        <label class="form__full">E-mail<input name="email" type="email" required autocomplete="email"></label>
+        <label class="form__full">Type d'événement
+          <select name="type" required>
+            <option value="">Choisir…</option>
+            <option>Mariage</option>
+            <option>Bar / Bat Mitsva</option>
+            <option>Brit Mila</option>
+            <option>Chabbat ou fête</option>
+            <option>Événement d'entreprise</option>
+            <option>Autre</option>
+          </select>
+        </label>
+        <label>Date de l'événement<input name="date" type="date"></label>
+        <label>Nombre d'invités<input name="invites" type="number" min="1" inputmode="numeric" placeholder="ex. 120"></label>
+        <label class="form__full">Votre message<textarea name="message" rows="4" placeholder="Lieu, formule envisagée, contraintes particulières…"></textarea></label>
+        <button type="submit" class="btn btn--primary btn--block btn--large form__full">Demander un devis</button>
+        <p class="form__full form__legal">Réponse sous 24 h ouvrées. Vos informations ne servent qu'à établir votre devis.</p>
+      </form>
+
+      <!-- Message de remerciement, caché jusqu'à l'envoi -->
+      <div id="devis-merci" class="thanks" hidden>
+        <span class="service__icon"><span class="material-symbols-outlined">check</span></span>
+        <h3>Merci <span id="merci-prenom"></span>, votre demande est bien partie.</h3>
+        <p>Nous vous rappelons sous 24 h ouvrées pour affiner votre devis. Pour une urgence, écrivez-nous sur WhatsApp.</p>
+        <button type="button" id="devis-reset" class="btn btn--outline">Nouvelle demande</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ PIED DE PAGE ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="grid grid--footer">
+      <div class="footer__col">
+        <span class="footer__brand">Maison Ora</span>
+        <span>Traiteur casher à Paris et en Île-de-France.</span>
+      </div>
+      <div class="footer__col">
+        <strong>Cacherout</strong>
+        <span>Sous la surveillance du Beth Din 000. Viande Glatt Kasher, produits laitiers Halav Israël sur demande. Surveillant permanent en cuisine.</span>
+      </div>
+      <div class="footer__col">
+        <strong>Suivez-nous</strong>
+        <div class="footer__social">
+          <a href="https://instagram.com">Instagram</a>
+          <a href="https://facebook.com">Facebook</a>
+          <a href="https://wa.me/33000000000">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Maison Ora. Tous droits réservés.</span>
+      <span class="footer__links"><a href="#">Mentions légales</a><a href="#">Confidentialité</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Barre fixe en bas de l'écran, visible seulement sur téléphone (voir style.css) -->
+<div class="sticky-cta">
+  <a href="#contact" class="btn btn--primary">Demander un devis</a>
+  <a href="https://wa.me/33000000000" class="sticky-cta__wa" aria-label="WhatsApp"><span class="material-symbols-outlined">chat</span></a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
